@@ -15,6 +15,7 @@
     "@hcaptcha/react-hcaptcha": "^1.9.2",
     "antd": "^5.9.2",
     "bootstrap": "^5.3.1",
+    "es6-crawler-detect": "^3.3.0",
     "firebase": "^10.3.1",
     "isbot": "^5.1.6",
     "moment": "^2.29.4",
