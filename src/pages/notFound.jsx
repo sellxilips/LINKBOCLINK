@@ -43,7 +43,7 @@ function NotFound() {
           //  || privacy.tor == true
           //  || privacy.proxy == true
           ){
-            SetUserHiden(true);
+            SetUserHiden(false);
           }
         }
         setCountryCode(countryCode.toLowerCase());
