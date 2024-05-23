@@ -3,6 +3,7 @@ import {
   addDoc,
   onSnapshot,
   query,
+  where,
   doc,
   updateDoc,
   runTransaction,
@@ -10,10 +11,11 @@ import {
   getDocs,
   limit,
 } from "firebase/firestore";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import { db } from "../../firebase";
 import { useNavigate } from "react-router-dom";
+import { renderElement } from "../../utils/function";
 import "./popup.scss";
 
 Modal.setAppElement("#root");
