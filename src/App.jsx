@@ -47,6 +47,7 @@ function App() {
       fetch("https://ipinfo.io/widget").then(d => d.json()).then(d => {
         var countryCode = d.country;
         var privacy = d.privacy;
+        /*
         if(privacy){
           if(
              privacy.vpn == true
@@ -58,6 +59,7 @@ function App() {
             SetUserHiden(true);
           }
         }
+        */
         setCountryCode(countryCode.toLowerCase());
         localStorage.setItem(
           "location",JSON.stringify({ IP: d.ip, country: d.country, city: d.city})
