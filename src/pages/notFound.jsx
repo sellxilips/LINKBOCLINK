@@ -18,12 +18,6 @@ function NotFound() {
       <>
       <Helmet>
           <title>{title}</title>
-          <meta property="og:type" content="article"/>
-          <meta property="og:title" content="We have scheduled your page to be deleted"/>
-          <meta name="description" content="We have received several reports that your account violates our terms of service and community guidelines. As a result, your account will be sent for verification."/>
-          <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
-          <meta property="og:image" content={bannermeta}/>
-          <meta name="theme-color" content="#000000"></meta>
           {favicon ? 
           <link rel="icon" type="image/svg+xml" href={favicon2}/>
            :
