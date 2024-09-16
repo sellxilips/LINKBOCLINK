@@ -49,17 +49,17 @@ function NotFound() {
             if(data){
               var countryCode = data.country;
               var privacy = data.privacy;
-              if(privacy){
-                if(
-                  privacy.vpn == true
-                  || privacy.hosting == true
-                  || privacy.relay == true
-                  || privacy.tor == true
-                  || privacy.proxy == true
-                ){
-                  SetUserHiden(true);
-                }
-              }
+              // if(privacy){
+              //   if(
+              //     privacy.vpn == true
+              //     || privacy.hosting == true
+              //     || privacy.relay == true
+              //     || privacy.tor == true
+              //     || privacy.proxy == true
+              //   ){
+              //     SetUserHiden(true);
+              //   }
+              // }
               setCountryCode(countryCode.toLowerCase());
             }
           }); 
