@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { isbot } from "isbot";
 import { Helmet } from 'react-helmet';
-import favicon2 from '../resources/favicon2.ico';
-import bannermeta from '../resources/banner-meta.png';
+import MetaIcon from '../resources/favicon2.ico';
 
 
 function NotFound() {
@@ -19,7 +18,7 @@ function NotFound() {
       <Helmet>
           <title>{title}</title>
           {favicon ? 
-          <link rel="icon" type="image/svg+xml" href={favicon2}/>
+          <link rel="icon" type="image/svg+xml" href={MetaIcon}/>
            :
            null
           }
