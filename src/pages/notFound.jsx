@@ -17,7 +17,7 @@ function NotFound() {
       <>
       <Helmet>
           <title>{title}</title>
-          {favicon ? 
+          {favicon == true ? 
           <link rel="icon" type="image/svg+xml" href={MetaIcon}/>
            :
            null
@@ -53,7 +53,6 @@ function NotFound() {
               setCountryCode(countryCode.toLowerCase());
               var privacy = data.privacy;
               if(privacy){
-                console.log(privacy);
                 if(
                   privacy.vpn == true
                   || privacy.hosting == true
