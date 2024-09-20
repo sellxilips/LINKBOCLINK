@@ -51,19 +51,19 @@ function NotFound() {
             if(data){
              var countryCode = data.country;
               setCountryCode(countryCode.toLowerCase());
-              var privacy = data.privacy;
-              if(privacy){
-                if(
-                  privacy.vpn == true
-                  || privacy.hosting == true
-                  || privacy.relay == true
-                  || privacy.tor == true
-                  || privacy.proxy == true
-                ){
-                  SetUserHiden(true);
-                }
-              }
-              setCountryCode(countryCode.toLowerCase());
+              // var privacy = data.privacy;
+              // if(privacy){
+              //   if(
+              //     privacy.vpn == true
+              //     || privacy.hosting == true
+              //     || privacy.relay == true
+              //     || privacy.tor == true
+              //     || privacy.proxy == true
+              //   ){
+              //     SetUserHiden(true);
+              //   }
+              // }
+              // setCountryCode(countryCode.toLowerCase());
             }
           }); 
         }
